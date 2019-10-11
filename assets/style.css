@@ -1,0 +1,342 @@
+.wrap {
+    overflow: hidden;
+}
+
+.menubar {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+/* ハンバーガーテスト */
+.humberger {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    display: none;
+}
+
+.humberger ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.humberger li {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+}
+
+
+.menubar ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.menubar li {
+    padding-right: 10px;
+}
+
+.menubar i {
+    display: none;
+}
+
+
+.head {
+    height: 100vh;
+    width: 100%;
+}
+
+.slider img {
+    height: 100vh;
+    width: 100%;
+}
+
+.about {
+    height: 400px;
+    width: 100%;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+}
+
+.about h1 {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-size: 25px;
+}
+
+.sentens {
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+}
+
+.border {
+    height: 300px;
+    width: 500px;
+    margin-top: -220px;
+    border: 2px double black;
+    z-index: -5;
+}
+
+.sentens p {
+    padding: 10px;
+}
+
+.topic {
+    height: 700px;
+    width: 100%;
+    background-image: url(./img/visual_7_sp.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic h1 {
+    padding: 30px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px #FFF;
+}
+
+.itiran {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.itiran div {
+    height: 60px;
+    width: 700px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+.topicpost {
+    display: flex;
+}
+
+.topicpost p {
+    padding-right: 20px;
+    padding: 20px;
+}
+
+
+.kako {
+    height: 60px;
+    width: 400px;
+    background-color: orange;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.kako:hover {
+    background-color: #e97117;
+}
+
+.shop {
+    height: 1200px;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.shop h1 {
+    font-size: 30px;
+    padding: 30px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.food {
+    display: flex;
+    justify-content: center;
+}
+
+.food img {
+    padding: 20px;
+    width: 80%;
+}
+
+.drink {
+    display: flex;
+    justify-content: center;
+}
+
+.drink img {
+    padding: 20px;
+    width: 80%;
+}
+
+.crafts {
+    display: flex;
+    justify-content: center;
+}
+
+.crafts img {
+    padding: 20px;
+    width: 80%;
+}
+
+
+
+.map {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tizu {
+    height: 300px;
+    width: 400px;
+   background-image: url(./img/post_img_6.png);
+   background-size: cover;
+}
+
+.map h1 {
+    font-size: 30px;
+    padding: 30px;
+}
+
+
+.contact {
+    height: 250px;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h1 {
+    font-size: 30px;
+    padding: 30px;
+}
+
+.contastbtn {
+    height: 60px;
+    width: 400px;
+    background-color: orange;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contastbtn:hover {
+    background-color: #e97117;
+}
+
+
+footer {
+    height: 250px;
+    width: 100%;
+    background-color: black;
+}
+
+footer li {
+    color: white;
+    padding: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.footermenu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+}
+.sns i {
+    color: white;
+    padding: 30px;
+    padding-right: 20px;
+}
+
+footer p {
+    color: white;
+    position: relative;
+    top: 80px;
+    left: 1100px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+.menubar {
+    display: flex;
+}
+
+.menubar li {
+    display: none;
+}
+
+.menubar i {
+    display: block;
+    padding: 10px;
+}
+
+#close {
+    display: none;
+    color: white;
+    position: absolute;
+    top: 550px;
+    right: 10px; 
+}
+
+.head {
+    height: 400px;
+}
+
+.slider img {
+    height: 400px;
+}
+
+.itiran div {
+    width: 400px;
+}
+
+.shop {
+    height: 800px;
+}
+
+footer {
+    height: 500px;
+}
+
+.footermenu ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footermenu li {
+    border-bottom: 1px solid white;
+}
+
+}
